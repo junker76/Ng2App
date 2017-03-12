@@ -15,7 +15,7 @@ const entryPoints = ["inline","polyfills","sw-register","styles","vendor","main"
 const baseHref = undefined;
 const deployUrl = undefined;
 
-
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 
 module.exports = {
@@ -280,6 +280,7 @@ module.exports = {
       "tsConfigPath": "src\\tsconfig.app.json",
       "skipCodeGeneration": true
     })
+    ,new WriteFilePlugin()
   ],
   "node": {
     "fs": "empty",

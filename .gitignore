@@ -4,6 +4,9 @@
 /dist
 /tmp
 
+#vsix extensions
+/out
+
 # dependencies
 /node_modules
 
