@@ -4,11 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ShellComponent } from './shell/shell.component';
+import { NavigatiionMenuComponent } from './shell/navigatiion-menu/navigatiion-menu.component';
+import { WorkItemsComponent } from './shell/work-items/work-items.component';
+import { AppInfoComponent } from './shell/app-info/app-info.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShellComponent,
+    NavigatiionMenuComponent,
+    WorkItemsComponent,
+    AppInfoComponent
   ],
   imports: [
     BrowserModule,
