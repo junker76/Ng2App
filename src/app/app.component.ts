@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ShellComponent } from './shell/shell.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
