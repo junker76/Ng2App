@@ -280,7 +280,7 @@ module.exports = {
       "tsConfigPath": "src\\tsconfig.app.json",
       "skipCodeGeneration": true
     })
-    ,new WriteFilePlugin()
+    ,new WriteFilePlugin()  //RP
   ],
   "node": {
     "fs": "empty",
