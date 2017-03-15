@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Inject } from '@angular/core';
+import { AppBusService } from '../../services/app-bus.service';
 
 @Component({
   selector: 'app-app-info',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppInfoComponent implements OnInit {
 
-  constructor() { }
+  private LastMessage : String;
+
+  constructor(
+    @Inject(AppBusService) appBus : AppBusService) { 
+      appBus.Messages.subscribe((cmd : String) => {
+        this.LastMessage = cmd;
+      })
+    }
 
   ngOnInit() {
+  }
+
+  private ReadCommands (cmd : String) {
+
   }
 
 }
